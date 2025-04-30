@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <PersonalProjects />
-      <button> hello </button>
     </>
   )
 }
