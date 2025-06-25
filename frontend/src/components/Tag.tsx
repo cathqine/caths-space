@@ -1,16 +1,15 @@
-import { useEffect, useState } from "react";
+import { /*useEffect,*/ useState } from "react";
 
 interface TagProps {
   tag: string,
   colour: string,
 }
 
-export default function Tag({ tag, colour }: TagProps) {
-  const [tagColour, setTagColour] = useState<string>('white');
+export default function Tag({ tag, /*colour*/ }: TagProps) {
+  const [tagColour, /*setTagColour*/] = useState<string>('white');
+  const [tagTextColour, /*setTagTextColour*/] = useState<string>('white')
 
-  const [tagTextColour, setTagTextColour] = useState<string>('white')
-
-  useEffect(() => {
+  /* useEffect(() => {
     getTagTextColour();
   }, [])
 
@@ -27,10 +26,10 @@ export default function Tag({ tag, colour }: TagProps) {
       setTagColour('#CFF0C3')
       setTagTextColour('#0E9530')
     }
-  }
+  } */
 
   return (
-    <div className={`lexend-light w-fit p-1 text-[${tagTextColour}] text-sm bg-[${tagColour}] border-1 rounded-3xl ml-2`}>
+    <div className={`lexend-light w-fit p-[0.3rem] text-[${tagTextColour}] text-sm bg-[${tagColour}] border-1 rounded-3xl ml-2`}>
       {tag}
     </div>
   );

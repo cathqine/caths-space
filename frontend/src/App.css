@@ -37,6 +37,15 @@ body {
   /* text-align: center; */
 }
 
+#logo {
+  background-image: url(./assets/logo-transparent.svg);
+  display: block;
+  margin: 0 auto;
+  /* text-indent: -9999px; */
+  width: 20rem;
+  height: 10rem;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -66,4 +75,33 @@ body {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(176, 87, 155);
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+.hover-underline-animation.left::after {
+  transform-origin: bottom right;
+}
+
+.hover-underline-animation.left:hover::after {
+  transform-origin: bottom left;
 }

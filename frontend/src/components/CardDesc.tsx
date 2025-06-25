@@ -10,11 +10,11 @@ interface CardDescProps {
 
 export default function CardDesc({ title, caption, status, techstack }: CardDescProps) {
   // tag types
-  const frontend = ['ReactTSX', 'ReactJS', 'TailwindCSS', 'MUI']; // blue
-  const stage = ['Launched', 'Figma Design', 'Github', 'Completed']; // green
-  const inProgress = ['WIP', 'Archived']; // orange
+  // const frontend = ['ReactTSX', 'ReactJS', 'TailwindCSS', 'MUI']; // blue
+  // const stage = ['Launched', 'Figma Design', 'Github', 'Completed']; // green
+  // const inProgress = ['WIP', 'Archived']; // orange
 
-  const [type, setType] = useState<string>('blue');
+  const [type, /*setType*/] = useState<string>('blue');
 
   return (
     <div className="lexend-light h-80 w-220 bg-gradient-to-b from-[#4b044c] to-[#0f0136] border-1 rounded-2xl flex flex-col justify-center p-10">

@@ -3,9 +3,14 @@ import PhotoCard from "./PhotoCard";
 
 interface ProjectCardProps {
   index: number,
+  title: string,
+  caption: string,
+  status: string[],
+  techstack: string[],
+
 }
 
-export default function ProjectCard({ index }: ProjectCardProps) {
+export default function ProjectCard({ index, title, caption, status, techstack }: ProjectCardProps) {
   return (
     <div className="flex flex-row mb-30">
       {
@@ -13,15 +18,17 @@ export default function ProjectCard({ index }: ProjectCardProps) {
           <>
             <PhotoCard leftval={0} rightval={20} />
             <CardDesc
-              title={"eCOM Dashboard"}
-              caption={"An ESG dashboard app assisting corporations & investors in exploring, monitoring and reporting ESG metrics."}
-              status={["Completed", "Github"]}
-              techstack={["ReactTSX", "TailwindCSS", "NodeTSX"]}
-            />
+              title={title}
+              caption={caption}
+              status={status}
+              techstack={techstack} />
           </> :
           <>
-            <CardDesc title={"Electus"} caption={"A voting tool for UNSW society held AGMs."} status={["Completed", "Github"]}
-              techstack={["ReactTSX", "TailwindCSS", "NodeTSX"]} />
+            <CardDesc
+              title={title}
+              caption={caption}
+              status={status}
+              techstack={techstack} />
             <PhotoCard leftval={20} rightval={0} />
           </>
       }
