@@ -18,9 +18,9 @@ export default function CardDesc({ title, caption, status, techstack }: CardDesc
 
   return (
     <div className="lexend-light h-80 w-220 bg-gradient-to-b from-[#4b044c] to-[#0f0136] border-1 rounded-2xl flex flex-col justify-center p-10">
-      <div className="flex flex-col mb-10">
-        <span className="lexend text-3xl">{title}</span>
-        <span className="pt-2 lexend-thin text-lg">{caption}</span>
+      <div className="flex flex-col mb-8">
+        <span className="pt-10 lexend text-3xl">{title}</span>
+        <span className="p-2 pl-0 lexend-thin text-lg">{caption}</span>
       </div>
 
       <div className="flex flex-col mb-10">
@@ -36,7 +36,7 @@ export default function CardDesc({ title, caption, status, techstack }: CardDesc
           })}
         </div>
         <div className="flex flex-row items-center mt-3">
-          Tech stack
+          <div className="w-20">Tech stack</div>
           {techstack?.map((tag: string) => {
             // if (frontend.includes(tag)) setType('blue')
             // else if (stage.includes(tag)) setType('green')
