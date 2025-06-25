@@ -1,12 +1,12 @@
 // import React from "react";
 import ProjectCard from "../components/ProjectCard";
 
-export default function PersonalProjects() {
+export default function Projects() {
   return (
     <>
       <title>cath's space - personal projects</title>
       <section className="lexend text-5xl">
-        Personal Projects
+        Projects
       </section>
 
       <section className="mt-16 flex flex-col">
