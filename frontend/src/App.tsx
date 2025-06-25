@@ -1,10 +1,14 @@
 import './App.css'
+import NavBar from './components/NavBar'
 import PersonalProjects from './pages/PersonalProjects'
 
 function App() {
   return (
     <>
-      <PersonalProjects />
+      <NavBar />
+      <div className='main'>
+        <PersonalProjects />
+      </div>
     </>
   )
 }

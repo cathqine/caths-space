@@ -1,6 +1,5 @@
 // import React from "react";
-
-import Card from "../components/Card"
+import ProjectCard from "../components/ProjectCard";
 
 export default function PersonalProjects() {
   return (
@@ -10,12 +9,11 @@ export default function PersonalProjects() {
         Personal Projects
       </section>
 
-      <section className="mt-16 grid grid-cols-3 gap-4">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+      <section className="mt-16 flex flex-col">
+        <ProjectCard index={1} />
+        <ProjectCard index={2} />
+        {/* <PhotoCard />
+        <CardDesc /> */}
       </section>
     </>
   );
