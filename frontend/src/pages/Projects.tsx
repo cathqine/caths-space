@@ -5,11 +5,11 @@ export default function Projects() {
   return (
     <>
       <title>cath's space - personal projects</title>
-      <section className="lexend text-5xl">
+      <section className="lexend text-5xl ml-10 mr-10">
         Projects
       </section>
 
-      <section className="mt-16 flex flex-col">
+      <section className="mt-16 sm:ml-10 sm:mr-10">
         <ProjectCard index={1}
           title={"eCOM Dashboard"}
           caption={"An ESG dashboard app assisting corporations & investors in exploring, monitoring and reporting ESG metrics."}
