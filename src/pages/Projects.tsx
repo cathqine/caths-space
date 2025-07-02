@@ -9,7 +9,7 @@ export default function Projects() {
         Projects
       </section>
 
-      <section className="mt-16 ml-5 w-max h-max flex flex-col items-center justify-center">
+      <section className="mt-16 ml-0 md:ml-5 w-max h-max flex flex-col items-center justify-center">
         <ProjectCard index={1}
           title={"eCOM Dashboard"}
           caption={"An ESG dashboard app assisting corporations & investors in exploring, monitoring and reporting ESG metrics."}
