@@ -14,25 +14,25 @@ export default function ProjectCard({ index, title, caption, status, techstack }
 
   // use state to see if it is in mobile mode, if it is in mobile mode then it is hidden. otherwise it is not hidden
   return (
-    <div className="flex flex-row mb-30">
+    <div className="flex flex-row mb-30 overflow-x-scroll">
       {
         (index % 2 === 1) ?
-          <div className="flex md:flex-row flex-col overflow-y-hidden">
-            <PhotoCard leftval={'ml-0'} rightval={'mr-20'} hidden={''} /> {/* overflow-y doesn't work for these? */}
+          <div className="flex md:flex-row flex-col md:overflow-y-scroll md:overflow-x-scroll">
+            <PhotoCard leftval={'ml-0'} rightval={''} hidden={''} /> {/* overflow-y doesn't work for these? */}
             <CardDesc
               title={title}
               caption={caption}
               status={status}
               techstack={techstack} />
           </div> :
-          <div className="flex md:flex-row flex-col overflow-y-hidden">
-            <PhotoCard leftval={'ml-0'} rightval={'mr-0'} hidden={'visible md:hidden'} />
+          <div className="flex md:flex-row flex-col md:overflow-y-scroll md:overflow-x-scroll">
+            <PhotoCard leftval={'ml-0'} rightval={''} hidden={'visible md:hidden'} />
             <CardDesc
               title={title}
               caption={caption}
               status={status}
               techstack={techstack} />
-            <PhotoCard leftval={'ml-20'} rightval={'mr-0'} hidden={'max-md:hidden visible'} />
+            <PhotoCard leftval={''} rightval={''} hidden={'max-md:hidden visible'} />
           </div>
       }
     </div>

@@ -17,7 +17,7 @@ export default function CardDesc({ title, caption, status, techstack }: CardDesc
   const [type, /*setType*/] = useState<string>('blue');
 
   return (
-    <div className="lexend-light md:h-80 md:w-200 h-100 w-100 ml-10 bg-gradient-to-b from-[#4b044c] to-[#0f0136] border-1 md:rounded-2xl rounded-b-2xl flex flex-col justify-center p-10">
+    <div className="lexend-light h-95 w-90 md:h-90 md:w-200 ml-10 bg-gradient-to-b from-[#4b044c] to-[#0f0136] border-1 md:rounded-2xl rounded-b-2xl flex flex-col justify-center p-10">
       <div className="flex flex-col mb-8">
         <span className="pt-10 lexend text-3xl">{title}</span>
         <span className="p-2 pl-0 lexend-thin text-lg">{caption}</span>
